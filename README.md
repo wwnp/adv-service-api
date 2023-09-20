@@ -36,7 +36,7 @@ Install laravel dependencies (sail especially):
 `cd adv-service-api && composer install`
 
 Turn on Docker-Desktop. Use command to start Docker containers defined in a docker-compose.yml file. Be patient, while Docker creates container:
-`./vendor/bin/sail -d`
+`./vendor/bin/sail up -d`
 
 Then we need to set up or database and populate it.
 `./vendor/bin/sail artisan migrate`
