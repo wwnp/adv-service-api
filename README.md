@@ -98,7 +98,7 @@ GET http://localhost/api/advertisements?page=1&per_page=10&sort_field=created_at
 ```
 
 
-#### Get a Single Advertisement
+### Get a Single Advertisement
 > URL: `http://localhost/api/advertisements/{id}`
 
 **Method: GET**
@@ -138,10 +138,7 @@ GET http://localhost/api/advertisements/1?fields=descr,images
 ```
 
 
-
-
-
-#### Create an Advertisement
+### Create an Advertisement
 > URL: `http://localhost/api/advertisements`
 
 **Method: POST**
