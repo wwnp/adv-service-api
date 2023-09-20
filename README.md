@@ -30,17 +30,27 @@ As you've installed a [WSL](https://learn.microsoft.com/en-us/windows/wsl/instal
 
 ##### Linux:
 Go to linux terminal, target home directory and clone the repo:
-```cd ~ && git clone https://github.com/wwnp/adv-service-api```
+```
+cd ~ && git clone https://github.com/wwnp/adv-service-api
+```
 
 Install laravel dependencies (sail especially):
-```cd adv-service-api && composer install```
+```
+cd adv-service-api && composer install
+```
 
 Turn on Docker-Desktop. Use command to start Docker containers defined in a docker-compose.yml file. Be patient, while Docker creates container:
-```./vendor/bin/sail up -d```
+```
+./vendor/bin/sail up -d
+```
 
 Then we need to set up or database and populate it.
-```./vendor/bin/sail artisan migrate```
-```./vendor/bin/sail artisan db:seed```
+```
+./vendor/bin/sail artisan migrate
+```
+```
+./vendor/bin/sail artisan db:seed
+```
 
 It's done! :smirk::thumbsup:. You can use software for sending requests like [Postman](https://www.postman.com/) or [Curl](https://curl.se/)
 
