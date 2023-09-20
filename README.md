@@ -23,11 +23,11 @@ Requirements:
 
 Install requirements according your OS.
 
-#####Windows:
+##### Windows:
 As you've installed a [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) , you need to use your windows terminal to get to linux terminal. Next follow guide for linux below.
 
 
-#####Linux:
+##### Linux:
 Go to linux terminal, target home directory and clone the repo:
 `cd ~/ && git clone https://github.com/wwnp/api-space-todos.git` 
 
@@ -53,7 +53,7 @@ It's done! :smirk::thumbsup:. You can use software for sending requests like [Po
 **Base URL:**
 `http://localhost`
 
-####Get List of Advertisements
+### Get List of Advertisements
 > URL: `http://localhost/api/advertisements`
 
 **Method: GET**
@@ -98,7 +98,7 @@ GET http://localhost/api/advertisements?page=1&per_page=10&sort_field=created_at
 ```
 
 
-####Get a Single Advertisement
+### Get a Single Advertisement
 > URL: `http://localhost/api/advertisements/{id}`
 
 **Method: GET**
@@ -138,10 +138,7 @@ GET http://localhost/api/advertisements/1?fields=descr,images
 ```
 
 
-
-
-
-####Create an Advertisement
+### Create an Advertisement
 > URL: `http://localhost/api/advertisements`
 
 **Method: POST**
