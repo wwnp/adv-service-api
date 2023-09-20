@@ -53,7 +53,7 @@ It's done! :smirk::thumbsup:. You can use software for sending requests like [Po
 **Base URL:**
 `http://localhost`
 
-###Get List of Advertisements
+### Get List of Advertisements
 > URL: `http://localhost/api/advertisements`
 
 **Method: GET**
@@ -98,7 +98,7 @@ GET http://localhost/api/advertisements?page=1&per_page=10&sort_field=created_at
 ```
 
 
-####Get a Single Advertisement
+#### Get a Single Advertisement
 > URL: `http://localhost/api/advertisements/{id}`
 
 **Method: GET**
