@@ -73,7 +73,7 @@ It's done! :smirk::thumbsup:. You can use software for sending requests like [Po
 
 *Example Request:*
 ```
-GET http://localhost/api/advertisements?page=1&per_page=10&sort_field=created_at&sort_order=desc
+http://localhost/api/advertisements?page=1&per_page=10&sort_field=created_at&sort_order=desc
 ```
 
 *Example Response:*
@@ -114,7 +114,7 @@ GET http://localhost/api/advertisements?page=1&per_page=10&sort_field=created_at
 
 *Example Request:*
 ```
-GET http://localhost/api/advertisements/1?fields=descr,images
+http://localhost/api/advertisements/1?fields=descr,images
 ```
 
 *Example Response:*
@@ -157,7 +157,7 @@ GET http://localhost/api/advertisements/1?fields=descr,images
 
 *Example Request:*
 ```
-POST http://localhost/api/advertisements
+http://localhost/api/advertisements
 {
     "title": "Audi Q8",
     "description": "Car in good condition.",
