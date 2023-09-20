@@ -2,14 +2,12 @@
 <p align="center"><img src="https://i.imgur.com/ePIhPeP.png" width="200" alt="Laravel Logo"></p>
 
 # <p align="center">Advertisements Restfull API</p>
----
+
 This advertisement management service is developed using the Laravel PHP framework based on this [test trial](https://github.com/avito-tech/adv-backend-trainee-assignment) . It enables users to store and retrieve advertisements through a JSON-based HTTP API. The service is designed for easy deployment, with Docker Compose support included. It offers the following key functionalities:
 
 - **List Advertisements**: Users can retrieve a paginated list of advertisements with options to sort by price or creation date. Each listing includes the advertisement's name, a link to its main photo, and its price.
 - **Retrieve a Single Advertisement**: Users can fetch detailed information about a specific advertisement, including its name, price, and a link to the main photo. Optionally, they can request additional fields like description and links to all photos.
 - **Create Advertisement**: Users can create new advertisements by providing details such as name, description, image url and price. The service returns the ID of the newly created advertisement along with a status code indicating success or failure.
-
----
 
 ## Install:
 
@@ -21,6 +19,9 @@ Requirements:
  - [Postman](https://www.postman.com/) or [Curl](https://curl.se/)
  - [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) (Optional)
 
+***In case of using Windows WSL, software like PHP, Composer, Git should be installed in the WSL environment.***
+
+
 Install requirements according your OS.
 
 ##### Windows:
@@ -29,24 +30,23 @@ As you've installed a [WSL](https://learn.microsoft.com/en-us/windows/wsl/instal
 
 ##### Linux:
 Go to linux terminal, target home directory and clone the repo:
-`cd ~/ && git clone https://github.com/wwnp/api-space-todos.git` 
+`cd ~ && git clone https://github.com/wwnp/adv-service-api` 
 
 Install laravel dependencies (sail especially):
-`cd ./api-space-todos.git && composer install`
+`cd adv-service-api && composer install`
 
 Turn on Docker-Desktop. Use command to start Docker containers defined in a docker-compose.yml file. Be patient, while Docker creates container:
-`docker-composer up`
+`./vendor/bin/sail -d`
+
+Then we need to set up or database and populate it.
+`./vendor/bin/sail artisan migrate`
+`./vendor/bin/sail artisan db:seed`
 
 <!-- TEMP -->
 <!-- Set up sail  -->
 <!-- `./vendor/bin/sail up` -->
 
 It's done! :smirk::thumbsup:. You can use software for sending requests like [Postman](https://www.postman.com/) or [Curl](https://curl.se/)
-
-
-
-
----
 
 ## Usage:
 
